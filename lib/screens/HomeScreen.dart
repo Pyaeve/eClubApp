@@ -49,69 +49,73 @@ class _HomeScreenState extends State<HomeScreen> {
         // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
         // change color while the other colors stay the same.
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        
         // Here we take the value from the HomeScreen object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
+         flexibleSpace: Container(
+      decoration: const BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: <Color>[Colors.black, Colors.blue]),
+      ),
+    ),
       ),
       body:
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
- Column(
-       
-          children: <Widget>[
-            Container(
-             
-              height:200,
-              width: double.infinity,
-              decoration: const BoxDecoration(
-                gradient: LinearGradient(
-                
-                begin: Alignment.bottomLeft,
-                end: Alignment.topRight,
-                colors: [
-                  Color.fromRGBO(224, 76, 7, 1),
-                  Color.fromARGB(255, 255, 158, 11)
-                ],
-            )),
-           child: const Column(
-              children:<Widget>[
-                SizedBox(
-                  height: 25,
-                ),
-                Text(
-                  'Disponible',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20
-
+          Column(
+            children: <Widget>[
+              Container(
+                height:200,
+                width: double.infinity,
+                decoration: const BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.bottomLeft,
+                    end: Alignment.topRight,
+                    colors: [
+                      Color.fromRGBO(224, 76, 7, 1),
+                     Color.fromARGB(255, 255, 158, 11)
+                    ],
                   )
-                ),  
-                SizedBox(
-                  height: 25, 
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      'Gs 2.000.000',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 35,
-                        fontWeight: FontWeight.bold)
-                    ),
-                    SizedBox(width: 20),
-                               Icon(
-                    Icons.remove_red_eye_outlined,
+              child: const Column(
+                children:<Widget>[
+                  SizedBox(
+                    height: 25,
+                   ),
+                  Text(
+                  'Disponible',
+                    style: TextStyle(
                       color: Colors.white,
-                      size: 40,
-                    ),
-                  ],
-                ),
-                
-            ],
-           ),
-           )
-
+                      fontSize: 20
+                    )
+                  ),  
+                  SizedBox(
+                    height: 25, 
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'Gs 2.000.000',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 35,
+                          fontWeight: FontWeight.bold)
+                      ),
+                      SizedBox(width: 20),
+                      Icon(
+                        Icons.remove_red_eye_outlined,
+                          color: Colors.white,
+                          size: 40,
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            )
           ],
         ),
      
