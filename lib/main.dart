@@ -11,13 +11,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'eClub',
+      title: 'eCLUB',
       theme: ThemeData(
-        
+        fontFamily: 'Poppins',
         colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 196, 103, 17)),
         useMaterial3: true,
       ),
-      home: const HomeScreen(title: 'eClub'),
+      home: const HomeScreen(title: 'eCLUB'),
+      debugShowCheckedModeBanner : false
     );
   }
 }

@@ -1,36 +1,25 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';   
+
 import 'AnalyticsScreen.dart';
-import 'TransactionsScreen.dart';
-
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key, required this.title});
-
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
-
+    
+class TransactionsScreen extends StatefulWidget {
+  const TransactionsScreen({super.key, required this.title}) ;
   final String title;
-
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  _TransactionsScreenState createState() => _TransactionsScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
-late int _selectedIndex = 0;
+class _TransactionsScreenState extends State<TransactionsScreen> {
+  late int _selectedIndex = 1;
    void _onItemTapped(int index) {
     /*setState(() {
       _selectedIndex = index;
     });*/
+    if(index == 0 && index < 3)
     setState(() {
-      _selectedIndex = 0;
-    })
-    ;
+      _selectedIndex = index;
+    });
   if(index == 1) {
     Navigator.push(
       context,
@@ -40,28 +29,30 @@ late int _selectedIndex = 0;
   if(index == 2) {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => const AnalyticsScreen(title: 'Análisis')),
+      MaterialPageRoute(builder: (context) => const AnalyticsScreen(title: 'Analisís')),
     );
   }
   }
-
+ 
   @override
   Widget build(BuildContext context) {
-    
-    return Scaffold(
+   return Scaffold(
       appBar: AppBar(
-        title: Padding(
-          padding: const EdgeInsets.only(left: 55),
-          child: Center(
-              child:
-                
-                Text(
+        leading: IconButton(
+        icon: Icon(
+            Icons.arrow_back, color: const Color.fromARGB(255, 241, 241, 241)),
+               onPressed: () => Navigator.of(context).pop(),
+        ), 
+  
+  centerTitle: true,
+        title:  Text(
                     widget.title, 
                     style: const TextStyle(
                         color: Colors.white)
                     )
-          ),
-        ),
+          
+     ,
+        
         flexibleSpace: Container(
           decoration: const BoxDecoration(
                   gradient: LinearGradient(
@@ -147,36 +138,7 @@ late int _selectedIndex = 0;
 
       ],
       ),
-      bottomNavigationBar: BottomNavigationBar(
-      backgroundColor: Colors.white, 
-      selectedItemColor: Colors.black,
-        selectedFontSize: 12,
-unselectedFontSize: 10,
-      unselectedItemColor: const Color.fromARGB(255, 129, 114, 114),
-       showSelectedLabels: true,
-  showUnselectedLabels: true,
-  currentIndex: _selectedIndex,
-          onTap: _onItemTapped,
-    items: const <BottomNavigationBarItem>[
       
-      BottomNavigationBarItem(
-        icon: Icon(CupertinoIcons.house),
-        label: 'Inicio',
-      ),
-      BottomNavigationBarItem(
-        icon: Icon(CupertinoIcons.arrow_down_right_arrow_up_left),
-        label: 'Tranferencias',
-      ),
-      BottomNavigationBarItem(
-        icon: Icon(Icons.pie_chart_outline_outlined),
-        label: 'Análisis',
-      ),
-      BottomNavigationBarItem(
-        icon: Icon(CupertinoIcons.profile_circled),
-        label: 'Cuenta',
-      ),
-    ],
-  ),
       body: Column(
             children: <Widget>[
                 Stack(
@@ -247,5 +209,6 @@ unselectedFontSize: 10,
      
       
     );
+
   }
 }
