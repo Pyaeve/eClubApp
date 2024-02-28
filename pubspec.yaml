@@ -35,6 +35,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
+  intl: ^0.19.0
 
 dev_dependencies:
   flutter_test:
@@ -63,7 +64,12 @@ flutter:
    - assets/icons/eclub_icon_hambur_menu_outline.webp
    - assets/icons/eclub_icon_hambur_menu_outline_grey.webp
    - assets/icons/eclub_icon_piechart_hero_circle_fullcolor.webp
-  #   - images/a_dot_ham.jpeg
+   - assets/icons/eclub_icon_bus_naranja_transparente_64x64.webp
+   - assets/icons/eclub_icon_shopping_basket_fullcolor_transparent_64x64.webp
+   - assets/icons/eclub_icon_bus_naranja_transparente_64x64.webp
+   - assets/icons/eclub_icon_shopping_basket_fullcolor_transparent_64x64.webp
+   
+   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

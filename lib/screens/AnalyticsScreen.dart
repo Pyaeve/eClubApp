@@ -1,9 +1,10 @@
+
 import 'package:eclubapp/screens/TransactionsScreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'HomeScreen.dart';
-    
+    import '../config/Constants.dart';
 class AnalyticsScreen extends StatefulWidget {
 
 
@@ -47,6 +48,8 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 245, 231, 234),
+
       appBar: AppBar(
         centerTitle: true,
         title: Text(widget.title),
@@ -170,13 +173,31 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
         mainAxisAlignment: MainAxisAlignment.center  ,
         mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              SizedBox(height: 20),
+              SizedBox(height: 30),
               Center(
-                child: CircleAvatar(
-                  radius: 100.0,
-                  backgroundImage: 
-                  AssetImage('assets/icons/eclub_icon_piechart_hero_circle_fullcolor.webp'),
-  ),
+                child: Column(
+                  
+                  children: [
+                     CircleAvatar(
+                      
+                      radius: 80.0,
+                      backgroundImage: 
+                      AssetImage('assets/icons/eclub_icon_piechart_hero_circle_fullcolor.webp'),
+                      ),
+                  ],
+                ),
+
+  
+    
+                ),
+                SizedBox(
+                  height: 30
+                ),
+                Center(
+                  child: Text(
+                    'Que deseas revisar? ',
+                    style: TextStyle(color: kColorPrimary,fontSize: 26), 
+                  ),
                 )
             ]
        )

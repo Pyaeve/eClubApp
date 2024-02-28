@@ -13,9 +13,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'eCLUB',
       theme: ThemeData(
+        scaffoldBackgroundColor: const Color.fromARGB(255, 245, 231, 234),
         fontFamily: 'Poppins',
-        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 196, 103, 17)),
+        
         useMaterial3: true,
+             
+
       ),
       home: const HomeScreen(title: 'eCLUB'),
       debugShowCheckedModeBanner : false
