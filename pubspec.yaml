@@ -36,6 +36,10 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
   intl: ^0.19.0
+  flutter_animate: ^4.5.0
+  shared_preferences: ^2.2.2
+  fl_chart: ^0.66.2
+
 
 dev_dependencies:
   flutter_test:
@@ -68,8 +72,10 @@ flutter:
    - assets/icons/eclub_icon_shopping_basket_fullcolor_transparent_64x64.webp
    - assets/icons/eclub_icon_bus_naranja_transparente_64x64.webp
    - assets/icons/eclub_icon_shopping_basket_fullcolor_transparent_64x64.webp
-   
-   #   - images/a_dot_ham.jpeg
+   - assets/icons/eclub_icon_targeta_primary_color_transparent_64x64.webp
+   - assets/icons/eclub_icon_billete_primary_color_transparent.webp
+   - assets/icons/eclub_icon_resto_violeta_transparente.webp
+   - assets/icons/eclub_icon_launcher.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
