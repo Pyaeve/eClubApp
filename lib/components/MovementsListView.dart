@@ -4,7 +4,7 @@ import 'package:flutter_animate/flutter_animate.dart';
 import '../helpers/Samples.dart';
 import 'package:flutter/material.dart';
 
-import '../config/Constants.dart';
+
 import 'MovementsRow.dart';
 
 class MovementsListView extends StatefulWidget {
@@ -33,7 +33,7 @@ class _MovementsListViewState extends State<MovementsListView> {
           )
         ),
         Expanded(
-          flex: 2,
+          flex: 1,
           child: AnimatedList(
               scrollDirection: Axis.vertical,
               initialItemCount: movs.length,

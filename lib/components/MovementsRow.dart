@@ -31,13 +31,13 @@ class _MovementsRowState extends State<MovementsRow> {
               title: Text(widget.movement.business,
                   style:  TextStyle(
                       color: Colors.black,
-                      fontSize: 12,
+                      fontSize: 11,
                       fontFamily: 'Poppins',
                       fontWeight: FontWeight.bold)),
               subtitle: Text(widget.movement.category,
                   style: const TextStyle(
                     color: Color.fromARGB(255, 136, 136, 136),
-                    fontSize: 13,
+                    fontSize: 11,
                     fontFamily: 'Poppins',
                   )),
               trailing: Column(children: [
@@ -45,18 +45,18 @@ class _MovementsRowState extends State<MovementsRow> {
                   height: 8,
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(2.0),
+                  padding: const EdgeInsets.only(top:5.0),
                   child: Text(getNumberFormatPY(widget.movement.import),
                       style: const TextStyle(
                           color: Colors.black,
                           fontFamily: 'Poppins',
-                          fontSize: 12,
+                          fontSize: 11,
                           fontWeight: FontWeight.bold)),
                 ).animate().fadeIn(duration: 200.ms).slideX(duration: 200.ms).flipV(duration: 200.ms),
                 Text(widget.movement.dt,
                         style: const TextStyle(
                           color: Color.fromARGB(255, 136, 136, 136),
-                          fontSize: 12,
+                          fontSize: 11,
                           fontFamily: 'Poppins',
                         ))
                    .animate().fadeIn(duration: 200.ms).slideY(duration: 200.ms).flip(duration: 500.ms)

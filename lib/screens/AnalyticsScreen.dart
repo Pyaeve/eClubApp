@@ -1,12 +1,10 @@
 import 'package:eclubapp/components/MenuRightActionBar.dart';
 import 'package:eclubapp/screens/BillsScreen.dart';
-import 'package:eclubapp/screens/TransactionsScreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 import '../components/MenuBottomNavigationBar.dart';
-import 'HomeScreen.dart';
 import '../config/Constants.dart';
 
 class AnalyticsScreen extends StatefulWidget {

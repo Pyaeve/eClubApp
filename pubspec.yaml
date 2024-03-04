@@ -76,6 +76,9 @@ flutter:
    - assets/icons/eclub_icon_billete_primary_color_transparent.webp
    - assets/icons/eclub_icon_resto_violeta_transparente.webp
    - assets/icons/eclub_icon_launcher.png
+   - assets/icons/eclub_icon_cajero_fondo_blanco_64x64.webp
+   - assets/icons/eclub_icon_health_color_blanco_64x64.webp     
+   - assets/icons/eclub_icon_faces_green.webp
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

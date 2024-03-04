@@ -1,7 +1,5 @@
-import 'package:eclubapp/components/ChartPieComponent.dart';
 import 'package:eclubapp/config/Constants.dart';
 import 'package:flutter/material.dart';
-import 'screens/Fechas.dart';
 import 'screens/HomeScreen.dart';
 
 void main() {
@@ -24,9 +22,7 @@ class MyApp extends StatelessWidget {
         primaryColor: kColorPrimary,
         useMaterial3: true,     
       ),
-
-      
-      home:  const HomeScreen(title: 'Farmcia Catedral'), // const HomeScreen(title: 'eCLUB'),
+      home:  const HomeScreen(title: 'eCLUB'), // const HomeScreen(title: 'eCLUB'),
       debugShowCheckedModeBanner : false
     );
   }
