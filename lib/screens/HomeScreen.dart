@@ -3,10 +3,9 @@ import 'package:eclubapp/components/MenuRightActionBar.dart';
 import 'package:eclubapp/helpers/Helpers.dart';
 import 'package:eclubapp/helpers/Samples.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/date_symbol_data_local.dart';
 import '../components/MovementsListView.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'dart:async';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key, required this.title});
@@ -27,27 +26,18 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  late  int totalImporte =calcularTotalImporte();
-   int calcularTotalImporte(){
-     var total = 0;
-     
-     for(var mov in movs){
-      total += mov.import;
+  late int totalImporte;
 
-     
-     }
-     return total;
-   }
   @override
   void initState() {
     super.initState();
-  totalImporte = calcularTotalImporte();
+
+    initializeDateFormatting('es', null);
+    totalImporte = getTotalImportByMovemements();
   }
 
   @override
   Widget build(BuildContext context) {
-
-  
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 245, 231, 234),
       appBar: AppBar(
@@ -67,21 +57,19 @@ class _HomeScreenState extends State<HomeScreen> {
             Color(0xffff6720),
           ],
         ))),
-        actions:  const [
-         MenuRightActionBar()
-        ],
+        actions: const [MenuRightActionBar()],
       ),
       bottomNavigationBar: const MenuBottomNavigationBar(item: 0),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Expanded(
             flex: 1,
             child: Column(
               children: [
                 Container(
-                  height: 180,
+                  height: 160,
                   width: double.infinity,
                   decoration: const BoxDecoration(
                       gradient: LinearGradient(
@@ -116,7 +104,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           Text(getNumberFormatPY(totalImporte),
                                   style: const TextStyle(
                                       color: Color.fromARGB(255, 255, 255, 255),
-                                      fontSize: 33,
+                                      fontSize: 30,
                                       fontWeight: FontWeight.bold))
                               .animate()
                               .slide(duration: 1500.ms)
@@ -125,7 +113,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           const Icon(
                             Icons.remove_red_eye_outlined,
                             color: Colors.white,
-                            size: 35,
+                            size: 32,
                           ),
                         ],
                       )
