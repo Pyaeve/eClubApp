@@ -286,13 +286,13 @@ String getImgByCategory(String cat){
       img ='assets/icons/eclub_icon_resto_violeta_transparente.webp';
       break;
      case 'Transporte':
-  img = 'assets/icons/eclub_icon_bus_naranja_transparente_64x64.webp';
-  break;
-  case 'Entretenimiento':
-  img = 'assets/icons/eclub_icon_faces_green.webp';
-  break;
-case 'Retiros':
-img =  'assets/icons/eclub_icon_cajero_fondo_transparente_64x64.webp'; 
+       img = 'assets/icons/eclub_icon_bus_naranja_transparente_64x64.webp';
+      break;
+    case 'Entretenimiento':
+      img = 'assets/icons/eclub_icon_faces_green.webp';
+     break;
+    case 'Retiros':
+      img =  'assets/icons/eclub_icon_cajero_fondo_transparente_64x64.webp'; 
 
 break;
   
@@ -304,28 +304,26 @@ break;
 
 }
 
-
-
 Color getColorByCategory(String cat){
   Color customColor = Colors.black;
   switch (cat){
     case 'Retiros':
-      customColor = Color.fromARGB(255, 33, 194, 194);
+      customColor = const Color.fromARGB(255, 33, 194, 194);
       break;
       case 'Compras':
-      customColor = Color.fromARGB(255, 72, 114, 228);
+      customColor = const Color.fromARGB(255, 72, 114, 228);
       break;
       case 'Entretenimiento':
-      customColor = Color.fromARGB(164, 62, 190, 2);
+      customColor = const Color.fromARGB(164, 62, 190, 2);
       break;
       case 'Bares y Restaurantes':
-      customColor = Color.fromARGB(255, 230, 142, 238);
+      customColor = const Color.fromARGB(255, 230, 142, 238);
       break;
       case 'Transporte':
-      customColor = Color.fromARGB(255, 248, 191, 117);
+      customColor = const Color.fromARGB(255, 248, 191, 117);
       break;
       case 'Salud':
-      customColor = Color.fromARGB(183, 245, 29, 29);
+      customColor = const Color.fromARGB(183, 245, 29, 29);
       break;
 
   }
