@@ -2,7 +2,7 @@ import 'package:eclubapp/models/Movements.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
-final List<Movements> movs = [
+ List<Movements> movs = [
   Movements(
       id: 1,
       ref: '32432432l;j323',
@@ -92,7 +92,7 @@ business:'Internet',
       id: 11,
       ref: 'ssadasdasdasd',
       img:getImgByCategory('Entretenimiento'),
-      dt: '2024-01-04 12:33:00',
+      dt: '2024-01-14 12:33:00',
       business: 'Internet',
             category: 'Entretenimiento',
       import: 145000),
@@ -106,20 +106,111 @@ business:'Internet',
       import: 145000),
       Movements(
       id: 13,
-      ref: 'ssadasdasdasd',
+      ref: '12345543455654543',
       img: getImgByCategory('Salud'),
-      dt: '2024-01-35 12:33:00',
+      dt: '2024-01-25 12:33:00',
       business: 'Punto Farma',
       category: 'Salud',
       import: 145000),
-    
+
+      //febrero
+      Movements(
+      id: 12,
+      ref: 'ssadasdasdasd',
+      img: 'assets/icons/eclub_icon_resto_violeta_transparente.webp',
+      dt: '2024-02-04 12:33:00',
+      business: 'Algun Lisssgar',
+      category: 'Bares y Restaurantes',
+      import: 145000),
+      Movements(
+      id: 14,
+      ref: '12345543455654543',
+      img: getImgByCategory('Salud'),
+      dt: '2024-02-05 12:33:00',
+      business: 'Punto Farma',
+      category: 'Salud',
+      import: 145000),
+      Movements(
+      id: 12,
+      ref: 'ssadasdasdasd',
+      img: 'assets/icons/eclub_icon_resto_violeta_transparente.webp',
+      dt: '2024-01-04 12:33:00',
+      business: 'Ese Lugar',
+      category: 'Bares y Restaurantes',
+      import: 145000),
+      Movements(
+      id: 13,
+      ref: '12345543455654543',
+      img: getImgByCategory('Entretenimiento'),
+      dt: '2024-02-01 11:33:00',
+      business: 'Netflix',
+      category: 'Entretenimiento',
+      import: 145000),
+
+       Movements(
+      id: 14,
+      ref: '12345543455654543',
+      img: getImgByCategory('Transporte'),
+      dt: '2024-02-05 12:33:00',
+      business: 'Bolt',
+      category: 'Transporte',
+      import: 145000),
+     Movements(
+      id: 15,
+      ref: '12345543455654543',
+      img: getImgByCategory('Transporte'),
+      dt: '2024-02-05 12:33:00',
+      business: 'Uber',
+      category: 'Transporte',
+      import: 234500),
+       Movements(
+      id: 15,
+      ref: '12345543455654543',
+      img: getImgByCategory('Retriros'),
+      dt: '2024-02-07 11:33:00',
+      business: 'Bancoo Regional',
+      category: 'Retiros',
+      import: 100000),
+       Movements(
+      id: 16,
+      ref: '12345543455654543',
+      img: getImgByCategory('Compras'),
+      dt: '2024-02-10 11:33:00',
+      business: 'La Chuchi',
+      category: 'Compras',
+      import: 1250600),
+       Movements(
+      id: 17,
+      ref: '1234554345565433',
+      img: getImgByCategory('Salud'),
+      dt: '2024-02-12 11:33:00',
+      business: 'farmacia Catedral',
+      category: 'Salud',
+      import: 100000),
+       Movements(
+      id: 18,
+      ref: '1234554345565433',
+      img: getImgByCategory('Salud'),
+      dt: '2024-02-15 11:33:00',
+      business: 'farmacia Catedral',
+      category: 'Salud',
+      import: 100000),
+         Movements(
+      id: 19,
+      ref: '1234554345565433',
+      img: getImgByCategory('Salud'),
+      dt: '2024-02-15 11:33:00',
+      business: 'farmacia Catedral',
+      category: 'Salud',
+      import: 105000),
 ];
 
 List<Color> colores = [Colors.amber, Colors.deepPurple,Colors.blue, Colors.blueAccent, Colors.green, Colors.deepPurple];
 List<String> cats =['Entretenimiento','Bares y Restaurantes','Compras','Transporte','Salud','Retiros','Ingresos']; 
   
 List<String> imgs =['assets/icons/eclub_icon_resto_violeta_transparente.webp','assets/icons/eclub_icon_shopping_basket_fullcolor_transparent_64x64.webp','assets/icons/eclub_icon_bus_naranja_transparente_64x64.webp','','',''];
-List<String> months =['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septimembre','octubre'];
+List<String> months =['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septimembre','octubre','noviembre','diciembre'];
+
 int getTotalImportByCategory(String cat) {
   int total = 0;
   for (var m in movs) {
@@ -129,6 +220,8 @@ int getTotalImportByCategory(String cat) {
   }
   return total;
 }
+
+
 
 int getTotalImportByMovemements(){
   int total = 0;
@@ -159,7 +252,7 @@ String  getDatetimeFormatted(String datePattern, String dateString){
 List<Movements> getMovsByCatAndMounth(String cat ){
   List<Movements> movsByCats = movs.where((m) => m.category == cat).toList();
   List<Movements> movsByMounths = movsByCats
-          .map((m)=> months.map((e) => getDatetimeFormatted('MMM', m.dt)==e).toList()).cast<Movements>()
+          .map((m)=> months.map((e) => getDatetimeFormatted('MMMM', m.dt)==e).toList()).cast<Movements>()
           .toList();
    return movsByMounths;
 }
@@ -199,11 +292,12 @@ String getImgByCategory(String cat){
   img = 'assets/icons/eclub_icon_faces_green.webp';
   break;
 case 'Retiros':
-img =  'assets/icons/eclub_icon_cajero_fondo_blanco_64x64.webp'; 
+img =  'assets/icons/eclub_icon_cajero_fondo_transparente_64x64.webp'; 
+
 break;
   
   case 'Salud':
-img ='assets/icons/eclub_icon_health_color_blanco_64x64.webp'; 
+img ='assets/icons/eclub_icon_health_color_transparent_64x64.webp'; 
 break;
   }
   return img;
@@ -212,26 +306,26 @@ break;
 
 
 
-Color getColorByCat(String cat){
+Color getColorByCategory(String cat){
   Color customColor = Colors.black;
   switch (cat){
     case 'Retiros':
-      customColor = Color(0xFFC3EDD8);
+      customColor = Color.fromARGB(255, 33, 194, 194);
       break;
       case 'Compras':
-      customColor = Color.fromARGB(255, 138, 98, 231);
+      customColor = Color.fromARGB(255, 72, 114, 228);
       break;
       case 'Entretenimiento':
-      customColor = Color.fromARGB(178, 120, 250, 44);
+      customColor = Color.fromARGB(164, 62, 190, 2);
       break;
       case 'Bares y Restaurantes':
-      customColor = Color.fromARGB(255, 207, 133, 236);
+      customColor = Color.fromARGB(255, 230, 142, 238);
       break;
       case 'Transporte':
-      customColor = Color.fromARGB(255, 236, 154, 46);
+      customColor = Color.fromARGB(255, 248, 191, 117);
       break;
       case 'Salud':
-      customColor = Color.fromARGB(255, 240, 53, 53);
+      customColor = Color.fromARGB(183, 245, 29, 29);
       break;
 
   }

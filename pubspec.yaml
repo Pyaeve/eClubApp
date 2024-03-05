@@ -79,8 +79,10 @@ flutter:
    - assets/icons/eclub_icon_cajero_fondo_blanco_64x64.webp
    - assets/icons/eclub_icon_health_color_blanco_64x64.webp     
    - assets/icons/eclub_icon_faces_green.webp
+   - assets/icons/eclub_icon_health_color_transparent_64x64.webp
+   - assets/icons/eclub_icon_cajero_fondo_transparente_64x64.webp
 
-  # An image asset can refer to one or more resolution-specific "variants", see
+   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
   # For details regarding adding assets from package dependencies, see

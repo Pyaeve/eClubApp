@@ -14,9 +14,7 @@ class TransactionsScreen extends StatefulWidget {
 class _TransactionsScreenState extends State<TransactionsScreen> {
   late int _selectedIndex = 1;
    void _onItemTapped(int index) {
-    /*setState(() {
-      _selectedIndex = index;
-    });*/
+   
     if(index == 0 && index < 3)
     setState(() {
       _selectedIndex = index;
