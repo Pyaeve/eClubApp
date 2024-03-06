@@ -39,8 +39,8 @@ class _TransactionsScreenState extends State<TransactionsScreen> {
    return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-        icon: Icon(
-            Icons.arrow_back, color: const Color.fromARGB(255, 241, 241, 241)),
+        icon: const Icon(
+            Icons.arrow_back, color: Color.fromARGB(255, 241, 241, 241)),
                onPressed: () => Navigator.of(context).pop(),
         ), 
   
@@ -78,7 +78,7 @@ class _TransactionsScreenState extends State<TransactionsScreen> {
                     Container(
                           width: double.infinity,
                      height:  (MediaQuery.of(context).size.height -  138),
-                    color:Color.fromARGB(255, 245, 231, 234),
+                    color:const Color.fromARGB(255, 245, 231, 234),
                     ),
                     Container(
                       height:200,

@@ -359,7 +359,7 @@ int getTotalImporatBNyCategoryAndMounths(String cat, String mounth){
 }
 
 
-Future<List<Movements>> getMovementsByCategoryAndMounth(String cat, String mounth) async {
+List<Movements> getMovementsByCategoryAndMounth(String cat, String mounth)  {
   List<Movements> movsByCat= movs.where((m) => m.category==cat&& getDatetimeFormatted('MMMM', m.dt)==mounth )
   .toList() ;
   return movsByCat;
