@@ -60,7 +60,7 @@ import '../config/App.dart';
       img:
           'assets/icons/eclub_icon_shopping_basket_fullcolor_transparent_64x64.webp',
       dt: '2024-01-04 14:00:00',
-      business: 'Algun Lisssgar',
+      business: 'Algun Lugar',
       category: 'Compras',
       import: 100000),
   Movements(
@@ -69,7 +69,7 @@ import '../config/App.dart';
       type: 'out',
       img: 'assets/icons/eclub_icon_resto_violeta_transparente.webp',
       dt: '2024-01-04 12:33:00',
-      business: 'Algun Lisssgar',
+      business: 'Algun Lugar',
       category: 'Bares y Restaurantes',
       import: 145000),
       Movements(
@@ -115,7 +115,7 @@ import '../config/App.dart';
       type: 'out',
       img: 'assets/icons/eclub_icon_resto_violeta_transparente.webp',
       dt: '2024-01-24 12:33:00',
-      business: 'Algun Lisssgar',
+      business: 'Algun Lugar',
       category: 'Bares y Restaurantes',
       import: 145000),
       Movements(
@@ -135,7 +135,7 @@ import '../config/App.dart';
       type: 'in',
       img: Helper.getImgByCategory('Salario'),
       dt: '2024-02-01 12:33:00',
-      business: 'Algun Lisssgar',
+      business: 'Algun Lugar',
       category: 'Salario',
       import: 10000000),
       Movements(
@@ -190,7 +190,7 @@ import '../config/App.dart';
       type: 'out',
       img:Helper.getImgByCategory('Retriros'),
       dt: '2024-02-07 11:33:00',
-      business: 'Bancoo Regional',
+      business: 'Banco Regional',
       category: 'Retiros',
       import: 100000),
        Movements(
@@ -217,7 +217,7 @@ import '../config/App.dart';
       type: 'out',
       img: Helper.getImgByCategory('Salud'),
       dt: '2024-02-15 11:33:00',
-      business: 'farmacia Catedral',
+      business: 'Farmacia Catedral',
       category: 'Salud',
       import: 100000),
    Movements(
@@ -226,7 +226,7 @@ import '../config/App.dart';
       type: 'out',
       img: Helper.getImgByCategory('Salud'),
       dt: '2024-02-25 11:33:00',
-      business: 'farmacia Catedral',
+      business: 'Farmacia Catedral',
       category: 'Salud',
       import: 105000),
          Movements(
@@ -235,10 +235,10 @@ import '../config/App.dart';
       type: 'in',
       img: Helper.getImgByCategory('Salario'),
       dt: '2024-03-01 11:33:00',
-      business: 'DirectTV',
+      business: 'Banco Regional',
       category: 'Salario',
       import: 10000000),
-         Movements(
+    Movements(
       id: 21,
       ref: '1234554345565433',
       type: 'out',
@@ -247,7 +247,7 @@ import '../config/App.dart';
       business: 'Uber',
       category: 'Transporte',
       import: 105000),
-         Movements(
+    Movements(
       id: 22,
       ref: '1234554345565433',
       type: 'out',
@@ -307,7 +307,7 @@ import '../config/App.dart';
       type: 'out',
       img: Helper.getImgByCategory('Salud'),
       dt: '2024-03-22 13:33:00',
-      business: 'farmacia Catedral',
+      business: 'Farmacia Catedral',
       category: 'Salud',
       import: 15000),
          Movements(
