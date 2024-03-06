@@ -130,10 +130,9 @@ class _ChartPieByMounthComponentState extends State<ChartPieByMounthComponent> {
               builder: (context) =>
                      BillsDetailsScreen(category: Helper.cats[touchedIndex], mounth: widget.mes)),
         );
-                               
-       
+
+
                         });
-                       
                       },
                     ),
                     borderData: FlBorderData(

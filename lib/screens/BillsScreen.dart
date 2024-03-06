@@ -57,7 +57,12 @@ class _BillsScreenState extends State<BillsScreen> {
           
               Center(child:
 
-               BillsByMounthContentComponent(mounth: 'enero'),
+               Column(
+        
+                 children: [
+                   BillsByMounthContentComponent(mounth: 'enero'),
+                 ],
+               ),
                   
               ),
               //  MovementsCategoriesListView

@@ -89,7 +89,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Column(
                     children: <Widget>[
                       const SizedBox(
-                        height: 20,
+                        height: 15,
                       ),
                       const Text('Disponible',
                               style:
@@ -99,7 +99,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       // baseline=800ms
 
                       const SizedBox(
-                        height: 20,
+                        height: 15,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -129,7 +129,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
           ),
-          const Expanded(flex: 2, child: MovementsListView())
+          const Expanded(flex: 1, child: MovementsListView())
         ],
       ),
     );

@@ -5,18 +5,18 @@ eClub App Demo(Prueba Tecnica).
 ## Instalación
 
 ### Clonas el Repo
-git clone https://github.com/Pyaeve/eClubApp.git
+
+git clone <https://github.com/Pyaeve/eClubApp.git>
 
 ### Ejecutas
 
 flutter run -d <device_id>
 
-
 ### Datos y funcionamiento
 
 los datos estan en /Helpers/Samples y son objetos que pueden modificar esto afectara la representacion de los datos
 
-Cada Movimiento tiene 
+Cada Movimiento tiene
     id
     ref
     fecha/hora

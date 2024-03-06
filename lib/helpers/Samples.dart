@@ -1,9 +1,7 @@
+// ignore_for_file: file_names
+
 import '../helpers/Helpers.dart';
 import 'package:eclubapp/models/Movements.dart';
-import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
-
-import '../config/App.dart';
 
  List<Movements> movs = [
   Movements(

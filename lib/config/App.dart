@@ -1,10 +1,6 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
-
-import '../helpers/Samples.dart';
-import '../models/Movements.dart';
 
 class AppConfig {
   static const Color kColorPrimary = Color(0xffdf0a5d);

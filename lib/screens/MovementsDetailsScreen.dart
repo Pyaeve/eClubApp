@@ -3,8 +3,6 @@
 import 'package:eclubapp/components/MenuRightActionBar.dart';
 import 'package:eclubapp/helpers/Helpers.dart';
 import 'package:flutter/material.dart';
-import '../config/App.dart';
-import '../helpers/Samples.dart';
 import '../models/Movements.dart';
 
 class MovementsDetailsScreen extends StatefulWidget {
