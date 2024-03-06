@@ -29,7 +29,7 @@ class _MovementsRowState extends State<MovementsRow> {
                 backgroundImage: AssetImage(widget.movement.img),
               ),
               title: Text(widget.movement.business,
-                  style:  TextStyle(
+                  style:  const TextStyle(
                       color: Colors.black,
                       fontSize: 11,
                       fontFamily: 'Poppins',

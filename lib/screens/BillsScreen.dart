@@ -26,7 +26,7 @@ class _BillsScreenState extends State<BillsScreen> {
               child: Text("Gastos", style: TextStyle(color: Colors.grey))),
           centerTitle: true,
           backgroundColor: const Color.fromARGB(255, 245, 231, 234),
-          actions: const [MenuRightActionBar()],
+          actions: const [MenuRightActionBar(iconColor: 'gris',)],
           bottom: const TabBar(
             tabAlignment: TabAlignment.start,
             isScrollable: true,
@@ -76,6 +76,4 @@ class _BillsScreenState extends State<BillsScreen> {
     );
   }
 
-  Widget? itemBuilder(BuildContext context, int index) {
-  }
 }

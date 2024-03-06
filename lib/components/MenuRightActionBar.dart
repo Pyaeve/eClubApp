@@ -1,16 +1,28 @@
 import 'package:flutter/material.dart';
     
 class MenuRightActionBar extends StatefulWidget {
-  const MenuRightActionBar({super.key});
-
+  const MenuRightActionBar({super.key, required this.iconColor});
+   final String iconColor;
   @override
   // ignore: library_private_types_in_public_api
   _MenuRightActionBarState createState() => _MenuRightActionBarState();
 }
 
 class _MenuRightActionBarState extends State<MenuRightActionBar> {
+
+   
   @override
   Widget build(BuildContext context) {
+    String imgAsset = '';
+    switch(widget.iconColor){
+        case 'blanco':
+          imgAsset = 'assets/icons/eclub_icon_hambur_menu_outline.webp';
+          break;
+        case 'gris':
+         imgAsset = 'assets/icons/eclub_icon_hambur_menu_outline_grey.webp';
+         break;
+
+   }
     return 
           PopupMenuButton(
             child: ClipRRect(
@@ -18,7 +30,7 @@ class _MenuRightActionBarState extends State<MenuRightActionBar> {
               child: Padding(
                 padding: const EdgeInsets.all(12.0),
                 child: Image.asset(
-                  "assets/icons/eclub_icon_hambur_menu_outline.webp",
+                 imgAsset,
                   width: 32,
                 ),
               ),

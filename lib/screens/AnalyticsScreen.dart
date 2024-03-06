@@ -35,7 +35,7 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
               ],
             ))),
             actions: const [
-            MenuRightActionBar()
+            MenuRightActionBar(iconColor: 'gris',)
             ]),
         bottomNavigationBar:     const MenuBottomNavigationBar(item: 2),
         //body

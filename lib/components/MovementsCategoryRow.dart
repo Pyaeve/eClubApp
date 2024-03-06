@@ -21,7 +21,7 @@ class _MovementsCategoryRowState extends State<MovementsCategoryRow> {
 
   @override
   Widget build(BuildContext context) {
-   total = getTotalImporatBNyCategoryAndMounths(widget.category, widget.mes);
+   total = getTotalImporatOutBNyCategoryAndMounths(widget.category, widget.mes);
 img = getImgByCategory(widget.category);
     if(total==0){
       return const SizedBox(height: 0);

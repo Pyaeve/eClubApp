@@ -1,5 +1,6 @@
 import 'package:eclubapp/components/MovementsRow.dart';
 import 'package:eclubapp/helpers/Samples.dart';
+import 'package:eclubapp/screens/MovementsDetailsScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:intl/date_symbol_data_local.dart';
@@ -20,11 +21,11 @@ class _MovementsCategoriesByMounthListViewState extends State<MovementsCategorie
  @override
   void initState() {
     super.initState();
-mov= getMovementsByCategoryAndMounth(widget.category, widget.mounth);
+mov= getMovementsOutByCategoryAndMounth(widget.category, widget.mounth);
     initializeDateFormatting('es', null);
    
     for(var i=0; i <  cats.length; i++){
-        total += getTotalImporatBNyCategoryAndMounths(cats[i], widget.mounth);
+        total += getTotalImporatOutBNyCategoryAndMounths(cats[i], widget.mounth);
     }
   }
   @override
@@ -43,7 +44,17 @@ mov= getMovementsByCategoryAndMounth(widget.category, widget.mounth);
                 initialItemCount: mov.length,
                 itemBuilder: (context, index, animation) {
                   return GestureDetector( //You need to make my child interactive
-                onTap: (){print(mov[index]);},
+                onTap: (){
+                  
+                  print('Negocio: '+mov[index].business + '\n Importe:'+ mov[index].import.toString());
+                 Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) =>
+                    MovementsDetailsScreen(title: 'Movimientos', movement: mov[index],)),
+        );
+                
+                },
                 child: MovementsRow(movement: mov[index],).animate().slide(duration: 345.ms).fadeIn(duration: 500.ms),
       
                 );

@@ -1,6 +1,8 @@
 class Movements {
    int id;
+   String type;
    String ref;
+
    String img;
   String  dt;
   String business;
@@ -10,7 +12,8 @@ class Movements {
   Movements({
   required this.id,
   required this.ref,
-  required this.img,  
+  required this.type,
+  required this.img,
   required this.dt,  
   required this.business,
   required this.category, 

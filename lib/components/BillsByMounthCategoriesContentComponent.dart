@@ -3,8 +3,6 @@ import 'package:eclubapp/components/ChartPieByCategoryComponent.dart';
 import 'package:eclubapp/components/MovementsCategoriesByMounthListView.dart';
 import 'package:intl/date_symbol_data_local.dart';
 
-import '../components/ChartPieByMounthComponent.dart';
-import '../components/MovementsCategoriesListView.dart';
 import 'package:flutter/material.dart';
 
 import '../config/Constants.dart';
@@ -31,13 +29,13 @@ class _BillsByMounthCategoriesContentComponentState extends State<BillsByMounthC
   Widget build(BuildContext context) {
     return  Column(
       children: [
-         ChartPieByCategoryComponent(category:widget.category, mounth: widget.mounth,) ,
-                        const SizedBox(height: 20,),
-                        MovementsCategoriesByMounthListView(category: widget.category, mounth: widget.mounth),
-                        const Padding(
-                          padding: EdgeInsets.all(12),
-                          child: SizedBox(
-                            width: double.infinity,
+            ChartPieByCategoryComponent(category:widget.category, mounth: widget.mounth,) ,
+            const SizedBox(height: 20,),
+            MovementsCategoriesByMounthListView(category: widget.category, mounth: widget.mounth),
+          const Padding(
+                padding: EdgeInsets.all(12),
+                child: SizedBox(
+                   width: double.infinity,
                             child: ElevatedButton(
                               style: ButtonStyle(
                                 backgroundColor: MaterialStatePropertyAll(kColorPrimary),
@@ -49,8 +47,8 @@ class _BillsByMounthCategoriesContentComponentState extends State<BillsByMounthC
                                 ),),
                               ),
                                     ),
-                          ),
-                        )
+          ),
+         )
       ],
     );
                      

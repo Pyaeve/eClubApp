@@ -28,7 +28,7 @@ class _ChartPieByMounthComponentState extends State<ChartPieByMounthComponent> {
     initializeDateFormatting('es', null);
    
     for(var i=0; i <  cats.length; i++){
-        total += getTotalImporatBNyCategoryAndMounths(cats[i], widget.mes);
+        total += getTotalImporatOutBNyCategoryAndMounths(cats[i], widget.mes);
     }
   }
 
@@ -41,8 +41,8 @@ class _ChartPieByMounthComponentState extends State<ChartPieByMounthComponent> {
       const shadows = [Shadow(color: Colors.black, blurRadius: 2)];
           return PieChartSectionData(
             color: getColorByCategory(cats[i]),
-            value: getTotalImporatBNyCategoryAndMounths(cats[i], widget.mes).toDouble(),
-            title:  getTotalImporatBNyCategoryAndMounths(cats[i], widget.mes).toString(),
+            value: getTotalImporatOutBNyCategoryAndMounths(cats[i], widget.mes).toDouble(),
+            title:  getTotalImporatOutBNyCategoryAndMounths(cats[i], widget.mes).toString(),
             radius: radius,
             showTitle: false,
             titleStyle: TextStyle(

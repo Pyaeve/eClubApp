@@ -1,8 +1,8 @@
+// ignore: unused_import
 import 'package:eclubapp/components/BillsByMounthContentComponent.dart';
 import 'package:flutter/material.dart';
 import 'package:eclubapp/components/MenuRightActionBar.dart';
 import 'package:eclubapp/config/Constants.dart';
-import 'package:flutter/widgets.dart';
 import 'package:intl/date_symbol_data_local.dart';
 
 import '../components/BillsByMounthCategoriesContentComponent.dart';
@@ -62,7 +62,7 @@ class _BillsDetailsScreenState extends State<BillsDetailsScreen> {
               child: Text("Gastos", style: TextStyle(color: Colors.grey))),
           centerTitle: true,
           backgroundColor: const Color.fromARGB(255, 245, 231, 234),
-          actions: const [MenuRightActionBar()],
+          actions: const [MenuRightActionBar(iconColor: 'gris',)],
           bottom: const TabBar(
             tabAlignment: TabAlignment.start,
             isScrollable: true,
@@ -112,6 +112,5 @@ class _BillsDetailsScreenState extends State<BillsDetailsScreen> {
     );
   }
 
-  Widget? itemBuilder(BuildContext context, int index) {
-  }
+ 
 }

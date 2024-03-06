@@ -39,7 +39,9 @@ class _MovementsListViewState extends State<MovementsListView> {
               initialItemCount: movs.length,
               itemBuilder: (context, index, animation) {
                 return GestureDetector( //You need to make my child interactive
-              onTap: (){print(movs[index]);},
+              onTap: (){print(movs[index].category);
+              
+              },
               child: MovementsRow(movement:movs[index]).animate().slide(duration: 1000.ms).fadeIn(duration: 500.ms),
 
               );

@@ -57,7 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
             Color(0xffff6720),
           ],
         ))),
-        actions: const [MenuRightActionBar()],
+        actions: const [MenuRightActionBar(iconColor: 'blanco',)],
       ),
       bottomNavigationBar: const MenuBottomNavigationBar(item: 0),
       body: Column(

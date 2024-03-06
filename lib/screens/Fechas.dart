@@ -20,7 +20,7 @@ class _FechasState extends State<Fechas> {
   @override
   Widget build(BuildContext context) {
   
-    int totales = getTotalImportByMounth('enero');
+    int totales = 0;//getTotalImportByMounth('enero');
    
    
     return Scaffold(

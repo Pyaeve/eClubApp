@@ -16,22 +16,26 @@ class MenuBottomNavigationBar extends StatefulWidget {
 }
 
 class _MenuBottomNavigationBarState extends State<MenuBottomNavigationBar> {
-  int selecteditem = 1;
+  int selecteditem = 0;
   void _onItemTapped(int index) {
    
     setState(() {
       selecteditem = index;
     });
-    switch (index) {
+
+   
+    switch (selecteditem) {
       case 0:
+      if(selecteditem!=widget.item){
         Navigator.pop(
           context,
           MaterialPageRoute(
               builder: (context) => const HomeScreen(title: 'eCLUB')),
         );
         break;
-
+      }
       case 1:
+      if(selecteditem!=widget.item){
         Navigator.push(
           context,
           MaterialPageRoute(
@@ -39,7 +43,9 @@ class _MenuBottomNavigationBarState extends State<MenuBottomNavigationBar> {
                     Fechas()),
         );
         break;
+      }
       case 2:
+      if(selecteditem!=widget.item){
       Navigator.push(
         context,
         MaterialPageRoute(
@@ -48,6 +54,7 @@ class _MenuBottomNavigationBarState extends State<MenuBottomNavigationBar> {
                 )),
       );
       break;
+      }
     }
 /*
     if (index == 1) {

@@ -28,7 +28,7 @@ class _ChartPieByCategoryComponentState extends State<ChartPieByCategoryComponen
     initializeDateFormatting('es', null);
    
    
-      total += getTotalImporatBNyCategoryAndMounths(widget.category, widget.mounth);
+      total += getTotalImporatOutBNyCategoryAndMounths(widget.category, widget.mounth);
     
   }
 
@@ -86,22 +86,20 @@ class _ChartPieByCategoryComponentState extends State<ChartPieByCategoryComponen
             children: [
               Center(
                 child: Padding(
-                  padding: const EdgeInsets.only(top:75),
+                  padding: const EdgeInsets.only(top:85),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                                      Center(
-                                        child: SizedBox(
-                                          width: 250,
-                                          child: Text(widget.category, 
+ 
+                                          Text(widget.category, 
                                                               style: const TextStyle(
                                                                 color: Colors.black, 
-                                                                fontSize: 12, 
+                                                                fontSize: 10, 
                                                                 fontWeight: 
                                                                 FontWeight.bold),),
-                                        ),
-                                      ),
+                                        
+                                      
                     Text(
                         getNumberFormatPY(total), style: const TextStyle(
                       color: kColorPrimary, 
