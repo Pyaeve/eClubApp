@@ -30,27 +30,25 @@ Ejemplo
 Agregar un movimiento mas a marzo para un gasto
 
 #
-[
-List<Movements> movs = 
+
+List<Movements> movs = [
     Movements(
       id: 31,
       ref: '1234554345565433',
-      type: 'in', 
+      type: 'in',
       img: Helper.getImgByCategory('Salario'),
       dt: '2024-03-202 15:33:00',
       business: 'Burguer King',
       category: 'Salario',
-      import: 7000000)
+      import: 7000000),
     Movements(
       id: 32,
       ref: '1234554345565433',
-      type: 'out',  
+      type: 'out',
       img: Helper.getImgByCategory('Bares y Restaurantes'),
       dt: '2024-03-26 15:33:00',
       business: 'Burguer King',
       category: 'Bares y Restaurantes',
-      import: 250000)
-
-]
+      import: 250000)]
 
 lo guardas y Flutter run -d <device_id>
