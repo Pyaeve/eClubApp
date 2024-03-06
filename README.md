@@ -29,7 +29,8 @@ Ejemplo
 
 Agregar un movimiento mas a marzo para un gasto
 
-List<Movements> movs [
+List<Movements> movs = 
+[
     Movements(
       id: 31,
       ref: '1234554345565433',
@@ -49,7 +50,6 @@ List<Movements> movs [
       business: 'Burguer King',
       category: 'Bares y Restaurantes',
       import: 250000)
-
 
 ]
 
