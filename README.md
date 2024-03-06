@@ -1,8 +1,8 @@
-# eclubapp
+# eClubApp
 
-EClub App Demo(Prueba Tecnica).
+eClub App Demo(Prueba Tecnica).
 
-## Instalacion
+## Instalación
 
 ### Clonas el Repo
 git clone https://github.com/Pyaeve/eClubApp.git
