@@ -334,7 +334,7 @@ import '../config/App.dart';
       ref: '1234554345565433',
       type: 'out',
       img: Helper.getImgByCategory('Bares y Restaurantes'),
-      dt: '2024-03-26 15:33:00',
+      dt: '2024-02-26 15:33:00',
       business: 'Burguer King',
       category: 'Bares y Restaurantes',
       import: 250000)

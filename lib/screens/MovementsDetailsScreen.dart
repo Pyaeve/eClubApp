@@ -49,7 +49,7 @@ class _MovementsDetailsScreenState extends State<MovementsDetailsScreen> {
             color: const Color.fromARGB(255, 245, 231, 234),
           ),
           Container(
-            height: 200,
+            height: 190,
             width: double.infinity,
             decoration: const BoxDecoration(
                 gradient: LinearGradient(
@@ -92,6 +92,7 @@ class _MovementsDetailsScreenState extends State<MovementsDetailsScreen> {
               ],
             ),
           ),
+          const SizedBox(height: 15),
 
           Center(
             child: Padding(
