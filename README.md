@@ -29,8 +29,8 @@ Cada Movimiento tiene
 Ejemplo
 
 Agregar un movimiento de Ingreso a Salario y otro de Gasto en Bares y Restaurantes
-```
-List\<Movements> movs = [
+```dart
+List<Movements> movs = [
     Movements(
       id: 31,
       ref: '1234554345565433',
