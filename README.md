@@ -30,6 +30,8 @@ Ejemplo
 
 Agregar un movimiento de Ingreso a Salario y otro de Gasto en Bares y Restaurantes
 
+````
+```dart
 List\<Movements> movs = [
     Movements(
       id: 31,
@@ -49,5 +51,8 @@ List\<Movements> movs = [
       business: 'Burguer King',
       category: 'Bares y Restaurantes',
       import: 250000)]
+```
+````
+
 
 lo guardas y Flutter run -d <device_id>
