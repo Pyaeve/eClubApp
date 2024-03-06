@@ -16,12 +16,13 @@ flutter run -d <device_id>
 
 los datos estan en /Helpers/Samples y son objetos que pueden modificar esto afectara la representacion de los datos
 
-Cada Movimiento tiene una
+Cada Movimiento tiene 
+    id
     ref
     fecha/hora
-    tipo de trasancion
+    tipo de trasacción o movimiento
     imagen
-    neogcio
+    negocio
     categoria
     importe
 
