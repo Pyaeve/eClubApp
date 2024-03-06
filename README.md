@@ -30,8 +30,6 @@ Ejemplo
 
 Agregar un movimiento de Ingreso a Salario y otro de Gasto en Bares y Restaurantes
 
-#
-
 List\<Movements> movs = [
     Movements(
       id: 31,
