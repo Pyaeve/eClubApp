@@ -3,7 +3,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../screens/AnalyticsScreen.dart';
-import '../screens/Fechas.dart';
 
 // ignore: must_be_immutable
 class MenuBottomNavigationBar extends StatefulWidget {
@@ -34,17 +33,7 @@ class _MenuBottomNavigationBarState extends State<MenuBottomNavigationBar> {
         );
         break;
       }
-      case 1:
-      if(selecteditem!=widget.item){
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-              builder: (context) =>
-                    Fechas()),
-        );
-        break;
-      }
-      case 2:
+        case 2:
       if(selecteditem!=widget.item){
       Navigator.push(
         context,

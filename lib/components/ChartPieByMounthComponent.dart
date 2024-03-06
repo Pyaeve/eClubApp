@@ -1,5 +1,4 @@
-import 'package:eclubapp/config/Constants.dart';
-import 'package:eclubapp/helpers/Samples.dart';
+// ignore_for_file: library_private_types_in_public_api, file_names, avoid_print
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/date_symbol_data_local.dart';
@@ -27,28 +26,28 @@ class _ChartPieByMounthComponentState extends State<ChartPieByMounthComponent> {
 
     initializeDateFormatting('es', null);
    
-    for(var i=0; i <  cats.length; i++){
-        total += getTotalImporatOutBNyCategoryAndMounths(cats[i], widget.mes);
+    for(var i=0; i <  Helper.cats.length; i++){
+        total += Helper.getTotalImporatOutBNyCategoryAndMounths(Helper.cats[i], widget.mes);
     }
   }
 
 
   List<PieChartSectionData> showingSections() {
-    return List.generate(cats.length, (i) {
+    return List.generate(Helper.cats.length, (i) {
       final isTouched = i == touchedIndex;
       final fontSize = isTouched ? 14.0 : 12.0;
       final radius = isTouched ? 60.0 : 50.0;
       const shadows = [Shadow(color: Colors.black, blurRadius: 2)];
           return PieChartSectionData(
-            color: getColorByCategory(cats[i]),
-            value: getTotalImporatOutBNyCategoryAndMounths(cats[i], widget.mes).toDouble(),
-            title:  getTotalImporatOutBNyCategoryAndMounths(cats[i], widget.mes).toString(),
+            color: Helper.getColorByCategory(Helper.cats[i]),
+            value: Helper.getTotalImporatOutBNyCategoryAndMounths(Helper.cats[i], widget.mes).toDouble(),
+            title:  Helper.getTotalImporatOutBNyCategoryAndMounths(Helper.cats[i], widget.mes).toString(),
             radius: radius,
             showTitle: false,
             titleStyle: TextStyle(
               fontSize: fontSize,
               fontWeight: FontWeight.bold,
-              color: AppColors.mainTextColor1,
+              color: AppConfig.mainTextColor1,
               shadows: shadows,
             ),
             badgeWidget: AnimatedContainer(
@@ -66,7 +65,7 @@ class _ChartPieByMounthComponentState extends State<ChartPieByMounthComponent> {
       ),
       padding: const EdgeInsets.all(56 * .15),
       child: Center(
-        child: Image.asset(getImgByCategory(cats[i]))
+        child: Image.asset(Helper.getImgByCategory(Helper.cats[i]))
       ),
     )
 
@@ -96,8 +95,8 @@ class _ChartPieByMounthComponentState extends State<ChartPieByMounthComponent> {
                       fontWeight: 
                       FontWeight.bold),),
                     Text(
-                        getNumberFormatPY(total), style: const TextStyle(
-                      color: kColorPrimary, 
+                        Helper.getNumberFormatPY(total), style: const TextStyle(
+                      color: AppConfig.kColorPrimary, 
                       fontSize: 15, 
                       fontWeight: 
                       FontWeight.bold),
@@ -123,12 +122,13 @@ class _ChartPieByMounthComponentState extends State<ChartPieByMounthComponent> {
                           touchedIndex = pieTouchResponse
                               .touchedSection!.touchedSectionIndex;
 
-                               print('Hciceste clein en la Categoria:'+ cats[touchedIndex]);
+                               // ignore: prefer_interpolation_to_compose_strings
+                               print('Hciceste clein en la Categoria:'+ Helper.cats[touchedIndex]);
                                 Navigator.push(
                       context,
           MaterialPageRoute(
               builder: (context) =>
-                     BillsDetailsScreen(category: cats[touchedIndex], mounth: widget.mes)),
+                     BillsDetailsScreen(category: Helper.cats[touchedIndex], mounth: widget.mes)),
         );
                                
        

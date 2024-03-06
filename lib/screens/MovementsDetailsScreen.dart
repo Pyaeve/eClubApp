@@ -1,12 +1,11 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import 'package:eclubapp/components/MenuRightActionBar.dart';
 import 'package:eclubapp/helpers/Helpers.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-
+import '../config/App.dart';
 import '../helpers/Samples.dart';
 import '../models/Movements.dart';
-import 'AnalyticsScreen.dart';
 
 class MovementsDetailsScreen extends StatefulWidget {
   const MovementsDetailsScreen(
@@ -77,7 +76,7 @@ class _MovementsDetailsScreenState extends State<MovementsDetailsScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(getNumberFormatPY(widget.movement.import),
+                    Text(Helper.getNumberFormatPY(widget.movement.import),
                         style: const TextStyle(
                             color: Colors.white,
                             fontSize: 35,
@@ -86,16 +85,14 @@ class _MovementsDetailsScreenState extends State<MovementsDetailsScreen> {
                     const Icon(
                       Icons.remove_red_eye_outlined,
                       color: Colors.white,
-                      size: 40,
+                      size: 20,
                     ),
                   ],
                 ),
               ],
             ),
           ),
-          const SizedBox(
-            height: 10,
-          ),
+
           Center(
             child: Padding(
               padding: const EdgeInsets.all(0),
@@ -106,7 +103,7 @@ class _MovementsDetailsScreenState extends State<MovementsDetailsScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       const Padding(
-                        padding: EdgeInsets.all(5),
+                        padding: EdgeInsets.all(0),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -133,7 +130,7 @@ class _MovementsDetailsScreenState extends State<MovementsDetailsScreen> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(5),
+                        padding: const EdgeInsets.all(0),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.end,
@@ -147,13 +144,13 @@ class _MovementsDetailsScreenState extends State<MovementsDetailsScreen> {
                             const SizedBox(
                               height: 15,
                             ),
-                            Text(getDatetimeFormatted(
+                            Text(Helper.getDatetimeFormatted(
                                 'dd/MM/yyy', widget.movement.dt)),
                             const SizedBox(
                               height: 15,
                             ),
                             // ignore: prefer_interpolation_to_compose_strings
-                            Text(getDatetimeFormatted(
+                            Text(Helper.getDatetimeFormatted(
                                 'HH:mm', widget.movement.dt)+' hs'),
                             const SizedBox(
                               height: 15,

@@ -1,11 +1,10 @@
 import 'package:eclubapp/components/MenuRightActionBar.dart';
 import 'package:eclubapp/screens/BillsScreen.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 import '../components/MenuBottomNavigationBar.dart';
-import '../config/Constants.dart';
+import '../config/App.dart';
+
 
 class AnalyticsScreen extends StatefulWidget {
   const AnalyticsScreen({super.key, required this.title});
@@ -30,8 +29,8 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                const Color.fromARGB(255, 245, 231, 234),
-                const Color.fromARGB(255, 245, 231, 234),
+                Color.fromARGB(255, 245, 231, 234),
+                Color.fromARGB(255, 245, 231, 234),
               ],
             ))),
             actions: const [
@@ -61,7 +60,7 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
                 child: Text(
                   '¿Que deseas revisar?',
                   style: TextStyle(
-                      color: kColorPrimary,
+                      color: AppConfig.kColorPrimary,
                       fontSize: 26,
                       fontWeight: FontWeight.bold),
                 ),
@@ -94,7 +93,7 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
                                     Text(
                                       'Ingresos',
                                       style: TextStyle(
-                                          color: kColorPrimary,
+                                          color: AppConfig.kColorPrimary,
                                           fontWeight: FontWeight.bold),
                                     ),
                                     SizedBox(height: 10)
@@ -140,7 +139,7 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
                                     Text(
                                       'Gastos',
                                       style: TextStyle(
-                                          color: kColorPrimary,
+                                          color: AppConfig.kColorPrimary,
                                           fontWeight: FontWeight.bold),
                                     ),
                                     SizedBox(height: 10)

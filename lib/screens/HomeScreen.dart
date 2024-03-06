@@ -1,11 +1,14 @@
+// ignore_for_file: file_names
+
 import 'package:eclubapp/components/MenuBottomNavigationBar.dart';
 import 'package:eclubapp/components/MenuRightActionBar.dart';
 import 'package:eclubapp/helpers/Helpers.dart';
-import 'package:eclubapp/helpers/Samples.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import '../components/MovementsListView.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+
+import '../config/App.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key, required this.title});
@@ -33,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
     super.initState();
 
     initializeDateFormatting('es', null);
-    totalImporte = getTotalImportByMovemements();
+    totalImporte = Helper.getTotalImportByMovemements();
   }
 
   @override
@@ -101,7 +104,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text(getNumberFormatPY(totalImporte),
+                          Text(Helper.getNumberFormatPY(totalImporte),
                                   style: const TextStyle(
                                       color: Color.fromARGB(255, 255, 255, 255),
                                       fontSize: 30,

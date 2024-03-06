@@ -1,5 +1,6 @@
-import 'package:eclubapp/config/Constants.dart';
+
 import 'package:flutter/material.dart';
+import 'config/App.dart';
 import 'screens/HomeScreen.dart';
 
 void main() {
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: const Color.fromARGB(255, 245, 231, 234),
         fontFamily: 'Poppins',
-        primaryColor: kColorPrimary,
+        primaryColor: AppConfig.kColorPrimary,
         useMaterial3: true,     
       ),
       home:  const HomeScreen(title: 'eCLUB'), // const HomeScreen(title: 'eCLUB'),

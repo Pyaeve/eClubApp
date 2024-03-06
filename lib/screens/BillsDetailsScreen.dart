@@ -1,10 +1,9 @@
 // ignore: unused_import
-import 'package:eclubapp/components/BillsByMounthContentComponent.dart';
+// ignore_for_file: library_private_types_in_public_api
 import 'package:flutter/material.dart';
 import 'package:eclubapp/components/MenuRightActionBar.dart';
-import 'package:eclubapp/config/Constants.dart';
+import 'package:eclubapp/config/App.dart';
 import 'package:intl/date_symbol_data_local.dart';
-
 import '../components/BillsByMounthCategoriesContentComponent.dart';
 
 class BillsDetailsScreen extends StatefulWidget {
@@ -66,8 +65,8 @@ class _BillsDetailsScreenState extends State<BillsDetailsScreen> {
           bottom: const TabBar(
             tabAlignment: TabAlignment.start,
             isScrollable: true,
-            labelColor: kColorPrimary,
-            indicatorColor: kColorPrimary,
+            labelColor: AppConfig.kColorPrimary,
+            indicatorColor: AppConfig.kColorPrimary,
             unselectedLabelColor: Colors.grey,
             indicatorPadding: EdgeInsets.all(0),
             padding: EdgeInsets.all(0),

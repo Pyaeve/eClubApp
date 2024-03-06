@@ -1,6 +1,14 @@
-import 'package:flutter/material.dart';
+// ignore_for_file: file_names
 
-class AppColors {
+import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
+
+import '../helpers/Samples.dart';
+import '../models/Movements.dart';
+
+class AppConfig {
+  static const Color kColorPrimary = Color(0xffdf0a5d);
+  static const Color kColorSecundary = Color(0xffff6720);
   static const Color primary = contentColorCyan;
   static const Color menuBackground = Color(0xFF090912);
   static const Color itemsBackground = Color(0xFF1B2339);
@@ -11,7 +19,6 @@ class AppColors {
   static const Color mainGridLineColor = Colors.white10;
   static const Color borderColor = Colors.white54;
   static const Color gridLinesColor = Color(0x11FFFFFF);
-
   static const Color contentColorBlack = Colors.black;
   static const Color contentColorWhite = Colors.white;
   static const Color contentColorBlue = Color(0xFF2196F3);
@@ -22,4 +29,6 @@ class AppColors {
   static const Color contentColorPink = Color(0xFFFF3AF2);
   static const Color contentColorRed = Color(0xFFE80054);
   static const Color contentColorCyan = Color(0xFF50E4FF);
+  static List<Color> colores = [Colors.amber, Colors.deepPurple,Colors.blue, Colors.blueAccent, Colors.green, Colors.deepPurple];
+
 }

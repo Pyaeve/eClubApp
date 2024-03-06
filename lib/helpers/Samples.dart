@@ -1,13 +1,16 @@
+import '../helpers/Helpers.dart';
 import 'package:eclubapp/models/Movements.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+
+import '../config/App.dart';
 
  List<Movements> movs = [
   Movements(
       id: 1,
       ref: '32432432l;j323',
       type: 'in',
-      img:   getImgByCategory('Entretenimiento'), 
+      img: Helper.  getImgByCategory('Entretenimiento'), 
       dt: '2024-01-03 08:00:00',
       business:'Internet',
      category: 'Entretenimiento',
@@ -16,7 +19,7 @@ import 'package:intl/intl.dart';
       id: 2,
       ref: '12321312312312321',
       type: 'out',
-      img:
+      img:Helper.
          getImgByCategory('Compras'),
          dt: '2024-01-02 10:00:00',
       business: 'RESTO YA',
@@ -35,7 +38,7 @@ import 'package:intl/intl.dart';
       id: 4,
       ref: '2133232332213',
       type: 'out',
-      img: getImgByCategory('Transporte'),
+      img: Helper.getImgByCategory('Transporte'),
        dt: '2024-01-03 08:00:00',
       business: 'Uber',
       category: 'Transporte',
@@ -44,7 +47,7 @@ import 'package:intl/intl.dart';
       id: 5,
       ref: '3345222344',
       type: 'out',
-      img:
+      img:Helper.
           getImgByCategory('Compras'),
           dt: '2024-01-03 09:00:00',
       business: 'Algun Ligar',
@@ -82,7 +85,7 @@ import 'package:intl/intl.dart';
       id: 9,
       ref: '1233243243434',
       type: 'out',
-      img: getImgByCategory('Entretenimiento'),
+      img: Helper.getImgByCategory('Entretenimiento'),
       dt: '2024-01-24 12:33:00',
       business: 'Playstation Network',
       category: 'Entretenimiento',
@@ -91,7 +94,7 @@ import 'package:intl/intl.dart';
       id: 10,
       ref: 'ssadasdasdasd',
       type: 'out',
-      img: getImgByCategory('Salud'),
+      img: Helper.getImgByCategory('Salud'),
       dt: '2024-01-23 12:33:00',
       business: 'Punto Farma',
       category: 'Salud',
@@ -101,7 +104,7 @@ import 'package:intl/intl.dart';
       id: 11,
       ref: 'ssadasdasdasd',
       type: 'out',
-      img:getImgByCategory('Entretenimiento'),
+      img:Helper.getImgByCategory('Entretenimiento'),
       dt: '2024-01-14 12:33:00',
       business: 'Internet',
             category: 'Entretenimiento',
@@ -119,7 +122,7 @@ import 'package:intl/intl.dart';
       id: 13,
       ref: '12345543455654543',
       type: 'out',
-      img: getImgByCategory('Salud'),
+      img: Helper.getImgByCategory('Salud'),
       dt: '2024-01-25 12:33:00',
       business: 'Punto Farma',
       category: 'Salud',
@@ -130,7 +133,7 @@ import 'package:intl/intl.dart';
       id: 12,
       ref: 'ssadasdasdasd',
       type: 'in',
-      img: getImgByCategory('Salario'),
+      img: Helper.getImgByCategory('Salario'),
       dt: '2024-02-01 12:33:00',
       business: 'Algun Lisssgar',
       category: 'Salario',
@@ -139,7 +142,7 @@ import 'package:intl/intl.dart';
       id: 14,
       ref: '12345543455654543',
       type: 'out',
-      img: getImgByCategory('Salud'),
+      img: Helper.getImgByCategory('Salud'),
       dt: '2024-02-05 12:33:00',
       business: 'Punto Farma',
       category: 'Salud',
@@ -157,7 +160,7 @@ import 'package:intl/intl.dart';
       id: 13,
       ref: '12345543455654543',
       type: 'out',
-      img: getImgByCategory('Entretenimiento'),
+      img: Helper.getImgByCategory('Entretenimiento'),
       dt: '2024-02-01 11:33:00',
       business: 'Netflix',
       category: 'Entretenimiento',
@@ -167,7 +170,7 @@ import 'package:intl/intl.dart';
       id: 14,
       ref: '12345543455654543',
       type: 'out',
-      img: getImgByCategory('Transporte'),
+      img: Helper.getImgByCategory('Transporte'),
       dt: '2024-02-05 12:33:00',
       business: 'Bolt',
       category: 'Transporte',
@@ -176,7 +179,7 @@ import 'package:intl/intl.dart';
       id: 15,
       ref: '12345543455654543',
       type: 'out',
-      img: getImgByCategory('Transporte'),
+      img: Helper.getImgByCategory('Transporte'),
       dt: '2024-02-05 12:33:00',
       business: 'Uber',
       category: 'Transporte',
@@ -185,7 +188,7 @@ import 'package:intl/intl.dart';
       id: 15,
       ref: '12345543455654543',
       type: 'out',
-      img: getImgByCategory('Retriros'),
+      img:Helper.getImgByCategory('Retriros'),
       dt: '2024-02-07 11:33:00',
       business: 'Bancoo Regional',
       category: 'Retiros',
@@ -194,7 +197,7 @@ import 'package:intl/intl.dart';
       id: 16,
       ref: '12345543455654543',
       type: 'out',
-      img: getImgByCategory('Compras'),
+      img: Helper.getImgByCategory('Compras'),
       dt: '2024-02-10 11:33:00',
       business: 'La Chuchi',
       category: 'Compras',
@@ -203,7 +206,7 @@ import 'package:intl/intl.dart';
       id: 17,
       ref: '1234554345565433',
       type: 'out',
-      img: getImgByCategory('Salud'),
+      img: Helper.getImgByCategory('Salud'),
       dt: '2024-02-12 11:33:00',
       business: 'farmacia Catedral',
       category: 'Salud',
@@ -212,7 +215,7 @@ import 'package:intl/intl.dart';
       id: 18,
       ref: '1234554345565433',
       type: 'out',
-      img: getImgByCategory('Salud'),
+      img: Helper.getImgByCategory('Salud'),
       dt: '2024-02-15 11:33:00',
       business: 'farmacia Catedral',
       category: 'Salud',
@@ -221,7 +224,7 @@ import 'package:intl/intl.dart';
       id: 19,
       ref: '1234554345565433',
       type: 'out',
-      img: getImgByCategory('Salud'),
+      img: Helper.getImgByCategory('Salud'),
       dt: '2024-02-25 11:33:00',
       business: 'farmacia Catedral',
       category: 'Salud',
@@ -230,7 +233,7 @@ import 'package:intl/intl.dart';
       id: 20,
       ref: '1234554345565433',
       type: 'in',
-      img: getImgByCategory('Salario'),
+      img: Helper.getImgByCategory('Salario'),
       dt: '2024-03-01 11:33:00',
       business: 'DirectTV',
       category: 'Salario',
@@ -239,7 +242,7 @@ import 'package:intl/intl.dart';
       id: 21,
       ref: '1234554345565433',
       type: 'out',
-      img: getImgByCategory('Transporte'),
+      img: Helper.getImgByCategory('Transporte'),
       dt: '2024-03-06 11:33:00',
       business: 'Uber',
       category: 'Transporte',
@@ -248,7 +251,7 @@ import 'package:intl/intl.dart';
       id: 22,
       ref: '1234554345565433',
       type: 'out',
-      img: getImgByCategory('Bares y Restaurantes'),
+      img:Helper. getImgByCategory('Bares y Restaurantes'),
       dt: '2024-03-09 15:33:00',
       business: 'Burguer King',
       category: 'Bares y Restaurantes',
@@ -257,7 +260,7 @@ import 'package:intl/intl.dart';
       id: 23,
       ref: '1234554345565433',
       type: 'out',
-      img: getImgByCategory('Salud'),
+      img: Helper.getImgByCategory('Salud'),
       dt: '2024-03-15 11:33:00',
       business: 'farmacia Catedral',
       category: 'Salud',
@@ -266,7 +269,7 @@ import 'package:intl/intl.dart';
       id: 24,
       ref: '1234554345565433',
       type: 'out',
-      img: getImgByCategory('Retiros'),
+      img: Helper.getImgByCategory('Retiros'),
       dt: '2024-03-16 11:33:00',
       business: 'Banco Regional',
       category: 'Retiros',
@@ -275,7 +278,7 @@ import 'package:intl/intl.dart';
       id: 25,
       ref: '1234554345565433',
       type: 'out',
-      img: getImgByCategory('Compras'),
+      img: Helper.getImgByCategory('Compras'),
       dt: '2024-03-18 11:33:00',
       business: 'Stock',
       category: 'Compras',
@@ -284,7 +287,7 @@ import 'package:intl/intl.dart';
       id: 26,
       ref: '1234554345565433',
       type: 'out',
-      img: getImgByCategory('Entretenimiento'),
+      img: Helper.getImgByCategory('Entretenimiento'),
       dt: '2024-03-15 11:33:00',
       business: 'Netflix',
       category: 'Entretenimiento',
@@ -293,7 +296,7 @@ import 'package:intl/intl.dart';
       id: 27,
       ref: '1234554345565433',
       type: 'out',
-      img: getImgByCategory('Compras'),
+      img: Helper.getImgByCategory('Compras'),
       dt: '2024-03-15 11:33:00',
       business: 'Vizarro',
       category: 'Compras',
@@ -302,7 +305,7 @@ import 'package:intl/intl.dart';
       id: 28,
       ref: '1234554345565433',
       type: 'out',
-      img: getImgByCategory('Salud'),
+      img: Helper.getImgByCategory('Salud'),
       dt: '2024-03-22 13:33:00',
       business: 'farmacia Catedral',
       category: 'Salud',
@@ -311,7 +314,7 @@ import 'package:intl/intl.dart';
       id: 29,
       ref: '1234554345565433',
       type: 'out',
-      img: getImgByCategory('Transporte'),
+      img: Helper.getImgByCategory('Transporte'),
       dt: '2024-03-25 11:22:00',
       business: 'Uber',
       category: 'Transporte',
@@ -321,7 +324,7 @@ import 'package:intl/intl.dart';
       id: 30,
       ref: '1234554345565433',
       type: 'out',
-      img: getImgByCategory('Bares y Restaurantes'),
+      img: Helper.getImgByCategory('Bares y Restaurantes'),
       dt: '2024-03-26 15:33:00',
       business: 'Burguer King',
       category: 'Bares y Restaurantes',
@@ -330,7 +333,7 @@ import 'package:intl/intl.dart';
       id: 31,
       ref: '1234554345565433',
       type: 'out',
-      img: getImgByCategory('Bares y Restaurantes'),
+      img: Helper.getImgByCategory('Bares y Restaurantes'),
       dt: '2024-03-26 15:33:00',
       business: 'Burguer King',
       category: 'Bares y Restaurantes',
@@ -338,7 +341,7 @@ import 'package:intl/intl.dart';
 
 
 ];
-
+/*
 List<Color> colores = [Colors.amber, Colors.deepPurple,Colors.blue, Colors.blueAccent, Colors.green, Colors.deepPurple];
 List<String> cats =['Entretenimiento','Bares y Restaurantes','Compras','Transporte','Salud','Retiros','Ingresos']; 
   
@@ -473,11 +476,11 @@ Color getColorByCategory(String cat){
       customColor = const Color.fromARGB(255, 245, 29, 29);
       break;
         case 'Salario':
-      customColor = Color.fromARGB(255, 201, 131, 2);
+      customColor = const Color.fromARGB(255, 201, 131, 2);
       break;
 
   }
 
   return customColor;
 
-}
+}*/

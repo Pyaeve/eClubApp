@@ -1,4 +1,4 @@
-// ignore_for_file: library_private_types_in_public_api
+// ignore_for_file: library_private_types_in_public_api, file_names
 import '../helpers/Helpers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -46,7 +46,7 @@ class _MovementsRowState extends State<MovementsRow> {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top:5.0),
-                  child: Text(getNumberFormatPY(widget.movement.import),
+                  child: Text(Helper.getNumberFormatPY(widget.movement.import),
                       style: const TextStyle(
                           color: Colors.black,
                           fontFamily: 'Poppins',
