@@ -69,7 +69,6 @@ class _ChartPieByCategoryComponentState
           ));
     });
   }
-
   @override
   Widget build(BuildContext context) {
     return Column(
