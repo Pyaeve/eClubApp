@@ -31,6 +31,7 @@ class _BillsByMounthCategoriesContentComponentState
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.start ,
       children: [
         ChartPieByCategoryComponent(
           category: widget.category,

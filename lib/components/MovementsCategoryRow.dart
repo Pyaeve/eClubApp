@@ -1,12 +1,7 @@
 // ignore_for_file: library_private_types_in_public_api, file_names
-
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-
-import '../config/App.dart';
 import '../helpers/Helpers.dart';
-// ignore: unused_import
-import '../models/Movements.dart';
 
 class MovementsCategoryRow extends StatefulWidget {
   const MovementsCategoryRow(

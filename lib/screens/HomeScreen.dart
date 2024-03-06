@@ -8,7 +8,6 @@ import 'package:intl/date_symbol_data_local.dart';
 import '../components/MovementsListView.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
-import '../config/App.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key, required this.title});

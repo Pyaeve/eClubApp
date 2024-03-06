@@ -1,5 +1,5 @@
 // ignore: unused_import
-// ignore_for_file: library_private_types_in_public_api
+// ignore_for_file: library_private_types_in_public_api, file_names
 import 'package:flutter/material.dart';
 import 'package:eclubapp/components/MenuRightActionBar.dart';
 import 'package:eclubapp/config/App.dart';
@@ -18,6 +18,7 @@ class _BillsDetailsScreenState extends State<BillsDetailsScreen> {
    int tabItemSelect = 0;
    List<String> meses = ['enero','febrero','marzo'];
    String mes = '';
+  @override
   void initState() {
     super.initState();
 
