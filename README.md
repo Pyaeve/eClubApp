@@ -16,9 +16,9 @@ flutter run -d <device_id>
 
 los datos estan en /Helpers/Samples y son objetos que pueden modificar esto afectara la representacion de los datos
 
-Cada Movimiento tiene una 
-    ref 
-    fecha/hora 
+Cada Movimiento tiene una
+    ref
+    fecha/hora
     tipo de trasancion
     imagen
     neogcio
@@ -27,7 +27,7 @@ Cada Movimiento tiene una
 
 Ejemplo
 
-Agregar un movimiento mas a marzo para un gasto
+Agregar un movimiento de Ingreso a Salario y otro de Gasto en Bares y Restaurantes
 
 #
 
