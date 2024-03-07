@@ -55,25 +55,16 @@ class _MovementsRowState extends State<MovementsRow> {
                               fontSize: 11,
                               fontWeight: FontWeight.bold)),
                     )
-                        .animate()
-                        .fadeIn(duration: 200.ms)
-                        .slideX(duration: 200.ms)
-                        .flipV(duration: 200.ms),
+                       ,
                     Text(widget.movement.dt,
                             style: const TextStyle(
                               color: Color.fromARGB(255, 136, 136, 136),
                               fontSize: 11,
                               fontFamily: 'Poppins',
                             ))
-                        .animate()
-                        .fadeIn(duration: 200.ms)
-                        .slideY(duration: 200.ms)
-                        .flip(duration: 500.ms)
+                        
                   ]))
-              .animate()
-              .fadeIn(duration: 200.ms)
-              .slideY(duration: 200.ms)
-              .flip(duration: 500.ms)
+              
         ],
       ),
     ).animate().fadeIn(duration: 200.ms);
