@@ -2,9 +2,13 @@
 
 
 import 'package:flutter/material.dart';
+import '../config/App.dart';
 import '../models/Movements.dart';
 import '../helpers/Helper.dart';
 import '../components/MenuRightActionBar.dart';
+
+
+//Screen para ver lso detalles de cada moviento
 class MovementsDetailsScreen extends StatefulWidget {
   const MovementsDetailsScreen(
       {super.key, required this.title, required this.movement});
@@ -32,19 +36,19 @@ class _MovementsDetailsScreenState extends State<MovementsDetailsScreen> {
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
           colors: [
-            Color(0xffdd003b),
-            Color(0xffff6720),
+           AppConfig.kColorPrimary,
+           AppConfig.kColorSecundary,
           ],
         ))),
         actions: const [MenuRightActionBar(iconColor: 'blanco',)],
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           Container(
             width: double.infinity,
-            color: const Color.fromARGB(255, 245, 231, 234),
+            color:AppConfig.kColorBackgroundWidget,
           ),
           Container(
             height: 190,
@@ -54,8 +58,8 @@ class _MovementsDetailsScreenState extends State<MovementsDetailsScreen> {
                   begin: Alignment.centerLeft,
                   end: Alignment.centerRight,
                   colors: <Color>[
-                    Color(0xffdd003b),
-                    Color(0xffff6720),
+                    AppConfig.kColorPrimary,
+                     AppConfig.kColorSecundary,
                   ],
                 ),
                 borderRadius: BorderRadius.only(
@@ -104,7 +108,7 @@ class _MovementsDetailsScreenState extends State<MovementsDetailsScreen> {
                       const Padding(
                         padding: EdgeInsets.all(0),
                         child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
