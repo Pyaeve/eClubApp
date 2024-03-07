@@ -3,7 +3,7 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import '../config/App.dart';
-import '../helpers/Helpers.dart';
+import '../helpers/Helper.dart';
 
 class ChartPieComponent extends StatefulWidget {
   const ChartPieComponent({super.key, required this.mes});

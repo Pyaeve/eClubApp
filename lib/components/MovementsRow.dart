@@ -1,5 +1,5 @@
 // ignore_for_file: library_private_types_in_public_api, file_names
-import '../helpers/Helpers.dart';
+import '../helpers/Helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import '../models/Movements.dart';

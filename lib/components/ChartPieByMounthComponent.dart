@@ -3,7 +3,7 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import '../config/App.dart';
-import '../helpers/Helpers.dart';
+import '../helpers/Helper.dart';
 import '../screens/BillsDetailsScreen.dart';
 
 class ChartPieByMounthComponent extends StatefulWidget {

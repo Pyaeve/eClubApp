@@ -1,10 +1,10 @@
 // ignore_for_file: file_names
 
-import 'package:eclubapp/components/MenuBottomNavigationBar.dart';
-import 'package:eclubapp/components/MenuRightActionBar.dart';
-import 'package:eclubapp/helpers/Helpers.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/date_symbol_data_local.dart';
+import '../components/MenuBottomNavigationBar.dart';
+import '../components/MenuRightActionBar.dart';
+import '../helpers/Helper.dart';
 import '../components/MovementsListView.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
@@ -63,8 +63,9 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       bottomNavigationBar: const MenuBottomNavigationBar(item: 0),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisSize: MainAxisSize.max,
         children: [
           Expanded(
             flex: 1,
