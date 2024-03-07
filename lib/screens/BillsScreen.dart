@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import '../components/MenuRightActionBar.dart';
 import '../config/App.dart';
 import '../components/BillsByMounthContentComponent.dart';
+
 class BillsScreen extends StatefulWidget {
   const BillsScreen({super.key});
 
@@ -26,7 +27,11 @@ class _BillsScreenState extends State<BillsScreen> {
               child: Text("Gastos", style: TextStyle(color: Colors.grey))),
           centerTitle: true,
           backgroundColor: const Color.fromARGB(255, 245, 231, 234),
-          actions: const [MenuRightActionBar(iconColor: 'gris',)],
+          actions: const [
+            MenuRightActionBar(
+              iconColor: 'gris',
+            )
+          ],
           bottom: const TabBar(
             tabAlignment: TabAlignment.start,
             isScrollable: true,
@@ -36,8 +41,6 @@ class _BillsScreenState extends State<BillsScreen> {
             indicatorPadding: EdgeInsets.all(0),
             padding: EdgeInsets.all(0),
             tabs: [
-
-              
               Tab(
                 text: "Enero 2022",
               ),
@@ -47,38 +50,25 @@ class _BillsScreenState extends State<BillsScreen> {
               Tab(
                 text: "Marzo 2024",
               ),
-           
             ],
-
           ),
         ),
-        body:  const TabBarView(
+        body: const TabBarView(
           children: [
-          
-              Center(child:
+            Center(
+              child: BillsByMounthContentComponent(mounth: 'enero'),
+            ),
 
-               Column(
-        
-                 children: [
-                   BillsByMounthContentComponent(mounth: 'enero'),
-                 ],
-               ),
-                  
-              ),
-              //  MovementsCategoriesListView
-           Center(child:
-               BillsByMounthContentComponent(mounth: 'febrero'),
-                  
-              ),
-              Center(child:
-               BillsByMounthContentComponent(mounth: 'marzo'),
-                  
-              ),
-          
+            //  MovementsCategoriesListView
+            Center(
+              child: BillsByMounthContentComponent(mounth: 'febrero'),
+            ),
+            Center(
+              child: BillsByMounthContentComponent(mounth: 'marzo'),
+            ),
           ],
         ),
       ),
     );
   }
-
 }
