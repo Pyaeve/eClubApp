@@ -28,7 +28,6 @@ class _MovementsCategoriesByMounthListViewState
     super.initState();
     mov = Helper.getMovementsOutByCategoryAndMounth(widget.category, widget.mounth);
     initializeDateFormatting('es', null);
-
     for (var i = 0; i < Helper.cats.length; i++) {
       total += Helper.getTotalImporatOutBNyCategoryAndMounths(Helper.cats[i], widget.mounth);
     }
