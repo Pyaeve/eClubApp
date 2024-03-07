@@ -21,12 +21,12 @@ class _BillsScreenState extends State<BillsScreen> {
       length: 12,
       initialIndex: tabItemSelect,
       child: Scaffold(
-        backgroundColor: const Color.fromARGB(255, 245, 231, 234),
+        backgroundColor:AppConfig.kColorBackgroundWidget,
         appBar: AppBar(
           title: const Center(
               child: Text("Gastos", style: TextStyle(color: Colors.grey))),
           centerTitle: true,
-          backgroundColor: const Color.fromARGB(255, 245, 231, 234),
+          backgroundColor: AppConfig.kColorBackgroundWidget,
           actions: const [
             MenuRightActionBar(
               iconColor: 'gris',

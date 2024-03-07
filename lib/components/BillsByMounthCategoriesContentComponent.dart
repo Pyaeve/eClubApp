@@ -7,7 +7,7 @@ import 'package:intl/date_symbol_data_local.dart';
 import 'package:flutter/material.dart';
 
 import '../config/App.dart';
-
+//componente para mostrar contenido de una categoria y mes especifico
 class BillsByMounthCategoriesContentComponent extends StatefulWidget {
   const BillsByMounthCategoriesContentComponent(
       {super.key, required this.category, required this.mounth});

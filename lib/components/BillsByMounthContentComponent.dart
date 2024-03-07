@@ -6,6 +6,8 @@ import '../components/ChartPieByMounthComponent.dart';
 import '../components/MovementsCategoriesListView.dart';
 import '../config/App.dart';
 
+//sComponente para mostrar contenido por mes
+
 
 class BillsByMounthContentComponent extends StatefulWidget {
   const BillsByMounthContentComponent({super.key, required this.mounth});

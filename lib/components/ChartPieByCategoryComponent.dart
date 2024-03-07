@@ -1,10 +1,10 @@
-// ignore_for_file: library_private_types_in_public_api, file_names
+// ignore_for_file:  file_names, library_private_types_in_public_api
 
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import '../config/App.dart';
-import '../helpers/Helpers.dart';
+import '../helpers/Helper.dart';
 
 class ChartPieByCategoryComponent extends StatefulWidget {
   const ChartPieByCategoryComponent(

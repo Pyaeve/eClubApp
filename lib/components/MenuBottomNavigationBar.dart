@@ -7,6 +7,8 @@ import 'package:flutter/material.dart';
 import '../screens/AnalyticsScreen.dart';
 
 // ignore: must_be_immutable
+
+//Componente Menu de NAvegacion q
 class MenuBottomNavigationBar extends StatefulWidget {
   const MenuBottomNavigationBar({super.key, required this.item});
   final int item;

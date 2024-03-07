@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import '../helpers/helper.dart';
 
+//componete que grafica  fila  de una categoria y mes especifico
 class MovementsCategoryRow extends StatefulWidget {
   const MovementsCategoryRow(
       {super.key, required this.category, required this.mes});
@@ -18,8 +19,8 @@ class _MovementsCategoryRowState extends State<MovementsCategoryRow> {
 
   @override
   Widget build(BuildContext context) {
-    total =
-        Helper.getTotalImporatOutBNyCategoryAndMounths(widget.category, widget.mes);
+    total = Helper.getTotalImporatOutBNyCategoryAndMounths(
+        widget.category, widget.mes);
     img = Helper.getImgByCategory(widget.category);
     if (total == 0) {
       return const SizedBox(height: 0);

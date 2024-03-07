@@ -3,9 +3,15 @@
 import 'package:flutter/material.dart';
 
 class AppConfig {
+//naombre
+  // ignore: constant_identifier_names
+  static const String kName = 'eClub';
+//colores
   static const Color kColorPrimary = Color(0xffdf0a5d);
   static const Color kColorSecundary = Color(0xffff6720);
-  static const Color primary = contentColorCyan;
+  static const Color kColorBackgroundWidget =
+      Color.fromARGB(255, 245, 231, 234);
+  static const Color primary = kColorPrimary;
   static const Color menuBackground = Color(0xFF090912);
   static const Color itemsBackground = Color(0xFF1B2339);
   static const Color pageBackground = Color(0xFF282E45);
@@ -25,6 +31,12 @@ class AppConfig {
   static const Color contentColorPink = Color(0xFFFF3AF2);
   static const Color contentColorRed = Color(0xFFE80054);
   static const Color contentColorCyan = Color(0xFF50E4FF);
-  static List<Color> colores = [Colors.amber, Colors.deepPurple,Colors.blue, Colors.blueAccent, Colors.green, Colors.deepPurple];
-
+  static List<Color> colores = [
+    Colors.amber,
+    Colors.deepPurple,
+    Colors.blue,
+    Colors.blueAccent,
+    Colors.green,
+    Colors.deepPurple
+  ];
 }

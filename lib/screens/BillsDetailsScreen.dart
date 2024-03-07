@@ -28,26 +28,19 @@ class _BillsDetailsScreenState extends State<BillsDetailsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    
     switch(widget.mounth){
       case 'enero':
-      tabItemSelect = 0;
-      mes = meses[0];
-
-
-      break;
+        tabItemSelect = 0;
+        mes = meses[0];
+        break;
       case 'febrero':
-      tabItemSelect = 1;
-      mes = meses[2];
-     
-
+        tabItemSelect = 1;
+        mes = meses[2];
       break;
       case 'marzo':
-      tabItemSelect = 2;
-      mes = meses[2];
-
-
-      break;
+       tabItemSelect = 2;
+        mes = meses[2];
+       break;
      
       
 
@@ -56,12 +49,12 @@ class _BillsDetailsScreenState extends State<BillsDetailsScreen> {
       length: 12,
       initialIndex: tabItemSelect,
       child: Scaffold(
-        backgroundColor: const Color.fromARGB(255, 245, 231, 234),
+        backgroundColor:AppConfig.kColorBackgroundWidget,
         appBar: AppBar(
           title: const Center(
               child: Text("Gastos", style: TextStyle(color: Colors.grey))),
           centerTitle: true,
-          backgroundColor: const Color.fromARGB(255, 245, 231, 234),
+          backgroundColor: AppConfig.kColorBackgroundWidget,
           actions: const [MenuRightActionBar(iconColor: 'gris',)],
           bottom: const TabBar(
             tabAlignment: TabAlignment.start,
@@ -72,8 +65,6 @@ class _BillsDetailsScreenState extends State<BillsDetailsScreen> {
             indicatorPadding: EdgeInsets.all(0),
             padding: EdgeInsets.all(0),
             tabs: [
-
-              
               Tab(
                 text: "Enero 2024",
               ),
@@ -83,7 +74,6 @@ class _BillsDetailsScreenState extends State<BillsDetailsScreen> {
               Tab(
                 text: "Marzo 2024",
               ),
-           
             ],
 
           ),
@@ -103,14 +93,11 @@ class _BillsDetailsScreenState extends State<BillsDetailsScreen> {
               ),
                Center(child:
                BillsByMounthCategoriesContentComponent(category: widget.category,mounth:'marzo')
-                  
+
               ),
-          
           ],
         ),
       ),
     );
   }
-
- 
 }

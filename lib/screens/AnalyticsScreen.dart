@@ -7,7 +7,6 @@ import 'package:flutter/material.dart';
 import '../components/MenuBottomNavigationBar.dart';
 import '../config/App.dart';
 
-
 class AnalyticsScreen extends StatefulWidget {
   const AnalyticsScreen({super.key, required this.title});
   final String title;
@@ -16,11 +15,10 @@ class AnalyticsScreen extends StatefulWidget {
 }
 
 class _AnalyticsScreenState extends State<AnalyticsScreen> {
- 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: const Color.fromARGB(255, 245, 231, 234),
+        backgroundColor: AppConfig.kColorBackgroundWidget,
         appBar: AppBar(
             automaticallyImplyLeading: false,
             centerTitle: true,
@@ -31,14 +29,16 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                Color.fromARGB(255, 245, 231, 234),
-                Color.fromARGB(255, 245, 231, 234),
+                AppConfig.kColorBackgroundWidget,
+                AppConfig.kColorBackgroundWidget,
               ],
             ))),
             actions: const [
-            MenuRightActionBar(iconColor: 'gris',)
+              MenuRightActionBar(
+                iconColor: 'gris',
+              )
             ]),
-        bottomNavigationBar:     const MenuBottomNavigationBar(item: 2),
+        bottomNavigationBar: const MenuBottomNavigationBar(item: 2),
         //body
         //Acaba el body
         body: Column(
@@ -123,9 +123,9 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
                       child: const Column(
                         children: [
                           DecoratedBox(
-                            decoration:  BoxDecoration(
-                               borderRadius: BorderRadius.all(Radius.circular(50))
-                            ),
+                            decoration: BoxDecoration(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(50))),
                             child: ColoredBox(
                               color: Colors.white,
                               child: Padding(

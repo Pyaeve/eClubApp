@@ -5,6 +5,8 @@ import 'package:flutter_animate/flutter_animate.dart';
 import '../helpers/Helper.dart';
 import 'MovementsCategoryRow.dart';
 
+
+//Compente que muestra un lista de cateogiras por mes
 class MovementsCategoriesListView extends StatefulWidget {
   const MovementsCategoriesListView({super.key, required this.mes});
   final String mes;

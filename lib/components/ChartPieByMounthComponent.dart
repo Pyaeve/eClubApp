@@ -5,7 +5,7 @@ import 'package:intl/date_symbol_data_local.dart';
 import '../config/App.dart';
 import '../helpers/Helper.dart';
 import '../screens/BillsDetailsScreen.dart';
-
+//Componente para graficar una torta del detalle de gasto
 class ChartPieByMounthComponent extends StatefulWidget {
   const ChartPieByMounthComponent({super.key, required this.mes});
 

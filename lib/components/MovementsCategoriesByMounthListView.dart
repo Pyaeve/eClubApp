@@ -1,13 +1,14 @@
-// ignore_for_file: avoid_print, library_private_types_in_public_api, prefer_interpolation_to_compose_strings, file_names
+// ignore_for_file: avoid_print,, prefer_interpolation_to_compose_strings, file_names, library_private_types_in_public_api
 
-import 'package:eclubapp/components/MovementsRow.dart';
-import 'package:eclubapp/screens/MovementsDetailsScreen.dart';
+import '../components/MovementsRow.dart';
+import '../screens/MovementsDetailsScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:intl/date_symbol_data_local.dart';
-import '../Helpers/helpers.dart';
+import '../Helpers/Helper.dart';
 import '../models/Movements.dart';
 
+//Compoente para mostrar Lista de una Categoria  y un mes especifico
 class MovementsCategoriesByMounthListView extends StatefulWidget {
   const MovementsCategoriesByMounthListView(
       {super.key, required this.category, required this.mounth});

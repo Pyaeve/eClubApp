@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import '../components/MenuBottomNavigationBar.dart';
 import '../components/MenuRightActionBar.dart';
+import '../config/App.dart';
 import '../helpers/Helper.dart';
 import '../components/MovementsListView.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -41,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 245, 231, 234),
+      backgroundColor: AppConfig.kColorBackgroundWidget,
       appBar: AppBar(
         title: Padding(
           padding: const EdgeInsets.only(left: 55),
@@ -55,8 +56,8 @@ class _HomeScreenState extends State<HomeScreen> {
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
           colors: [
-            Color(0xffdd003b),
-            Color(0xffff6720),
+            AppConfig.kColorPrimary,
+            AppConfig.kColorSecundary,
           ],
         ))),
         actions: const [MenuRightActionBar(iconColor: 'blanco',)],
@@ -79,8 +80,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         begin: Alignment.centerLeft,
                         end: Alignment.centerRight,
                         colors: <Color>[
-                          Color(0xffdd003b),
-                          Color(0xffff6720),
+                            AppConfig.kColorPrimary,
+                           AppConfig.kColorSecundary,
                         ],
                       ),
                       borderRadius: BorderRadius.only(
@@ -129,7 +130,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
           ),
-          const Expanded(flex: 1, child: MovementsListView())
+          const Expanded(flex: 2, child: MovementsListView())
         ],
       ),
     );
